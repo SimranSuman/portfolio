@@ -1,0 +1,205 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d09843f4f1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+           <nav>
+            <img class="logo">
+            <ul id="sidemenu">
+                <li><a href= "#header">Home</a></li>
+                <li><a href= "#about">About</a></li>
+                <li><a href= "#services">Services</a></li>
+                <li><a href= "#portfolio">Portfolio</a></li>
+                <li><a href= "#contact">Contact</a></li>    
+                <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>            
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+           </nav> 
+           <div class="header-text">
+           <p>WEB DEVELOPER.</p>
+             <h1>Hi, I'm <span>Simran Suman</span></h1>
+             <br>
+             <h2>From India. I am working Experience for Web Development</h2>
+           </div>
+        </div>
+    </div>
+<!-----------------About--------------------->    
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="suman.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me </h1>
+                    <p>I am available for web developer and UI UX Design projects and web sites.
+                        I also working on web Development like HTML / CSS / JS & MYSQLL.
+                    </p>
+
+                       <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                       </div>
+                       <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Desiginig Web/App interface</li>
+                            <li><span>Web Development</span><br>Web App Development </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents active-tab" id="experience">
+                        <ul>
+                            <li><span>2024-current</span>
+                            <br>Fresher 
+                            <br>0 experience</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>2024</span>
+                            <br>MCA at MRIIRS
+                            <br>BCA from patna university</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------services--------- -->
+    <div id="services"></div>
+     <div class="services">
+        <div class="container">
+            <h1 class="sub-title">Services</h1>
+            <div class="services-list">
+            </div>
+            <div>
+                <i class=""></i>
+                <h2>Web Application</h2>
+                <p>Web Design and responsive application</p>
+                    <a href="#"> learn more</a>
+            </div>
+            <div>
+                <i class=""></i>
+                <h2>UI/Ux Design</h2>
+                <p>Fronted Design</p>
+                    <a href="#"> learn more</a>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------portfolio--------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image3.jpeg">
+                    <div class="layer">
+                        <h2>Wheather Web Application</h2><br>
+                        <p>This is a web based Application for using like HTML , CSS & JS. This Wheather application user can  easily check and see the Wheather.  </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="siman.jpeg">
+                    <div class="layer">
+                        <h2>Tic - Tae - toe</h2><br>
+                        <p> This is a web based Application for using like HTML , CSS & JS. This Application user can enjoy this game baed application.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="simmi.jpeg">
+                    <div class="layer">
+                        <h2>Restaurant Management System</h2><br>
+                        <p>To Developed a Restaurant Management System using HTML, CSS ,JS MYSQL AND PHP.This Management is web based Application that allow user can register and login as Restaurant view and reserved for table.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#"class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ---------------contact----------------->
+    <div id="contact">
+    <div class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> Email-id - simransuman16@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>Mobile No - 8340723200</p>
+                    <a href="simmi suman.pdf"download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Simran Suman. Made by Simran <i class="fa-solid fa-face-smile"></i></p>
+        </div>
+    </div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link ");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    
+    function closemenu(){
+        sidemenu.style.right = "200px";
+    }
+
+
+</script>
+<script>
+    const scriptURL = '<https://script.google.com/macros/s/AKfycbzUQPErNqz-_BJslZVHmdHqqId54TEqfF3TmVIGVbcbeQl0gO4h0UBzhwIqGSBf8Sri/exec>'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = Document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
